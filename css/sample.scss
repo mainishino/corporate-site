@@ -443,7 +443,22 @@ h1{
     padding: 40px 0;
     background-image: url(../images/news/sub_cover.jpg);
     background-size: cover;
+    
+     //retina_bg
+  @media screen and (-webkit-min-device-pixel-ratio:2),
+                    (min-resolution: 2dppx){
+
+    background-image: url("../images/news/sub_cover@2x.jpg");
+
+  }
+  
+  @media (min-width: 551px) {
+    padding:80px;
+    background-size: cover;
+
 }  
+
+} 
 
 
   
@@ -455,9 +470,17 @@ h1{
     margin: 0;
     letter-spacing: 0.2rem;
 }
-  
-  
 
+  @media (min-width: 550px){
+#sub_cover h2 {
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.2rem;
+}
+}
 
 
 
@@ -491,6 +514,42 @@ h1{
 }
 
 
+
+@media (min-width: 550px){
+#contents {
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+}
+
+@media (min-width: 550px) {
+#contents #main {
+    padding-right: 20px;
+}
+}
+
+@media (min-width: 550px){
+#contents #main h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+}
+
+
+@media (min-width: 550px){
+#contents #main .news_li li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+}
+
+@media (min-width: 550px){
+#contents #main .news_li li span {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 10px;
+}
+}
 
 // ここからサイドバー
 
@@ -558,3 +617,24 @@ h1{
 
 // ここからcompany
 
+#contents #main h2.company_title {
+    margin-bottom: 0px;
+}
+
+#contents #main th {
+    padding-right: 20px;
+}
+
+
+#contents #main th, #contents #main td {
+    padding: 20px 0;
+    color: #626262;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 550px){
+#contents #main {
+    padding-right: 20px;
+}
+}
